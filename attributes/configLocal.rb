@@ -1,0 +1,13 @@
+default['datahub']['configLocal']['db']['username'] = ''
+default['datahub']['configLocal']['db']['server'] = ''
+default['datahub']['configLocal']['db']['password'] = '!'
+default['datahub']['configLocal']['settings']['api_url'] = 'https://api.logentries.com'
+default['datahub']['configLocal']['settings']['port'] = 20000
+default['datahub']['configLocal']['settings']['host'] = 'data.logentries.com'
+default['datahub']['configLocal']['settings']['update_url'] = 'https://rep.logentries.com/datahub/'
+default['datahub']['configLocal']['settings']['config_polling_interval'] = 60
+default['datahub']['configLocal']['settings']['api2_url'] = 'https://logentries.com/datahub'
+default['datahub']['configLocal']['settings']['update_polling_interval'] = 1
+default['datahub']['configLocal']['tcp']['bind_port'] = node['datahub']['tcp']['bind_port']
+default['datahub']['configLocal']['tcp']['max_size'] = 8000
+default['datahub']['configLocal']['tcp']['tls_bind_port'] = node['datahub']['tcp']['tls_bind_port']
