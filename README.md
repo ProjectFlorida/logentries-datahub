@@ -24,7 +24,7 @@ Attributes
 * `node['datahub']['url']` - URL of where DataHub should be downloaded from
 
 * `node['datahub']['tcp']['bind_port']` - port to bind to DataHub
-* `node['datahub']['tcp']['tls_bind_port']` - SSL port to bind to DataHub
+* `node['datahub']['tcp']['tls_bind_port']` - TLS port to bind to DataHub
 
 * `node['java']['jdk_version']` - version of Java to install
 
@@ -61,19 +61,20 @@ Attributes
 
 
 ###configLocal
-* `node['datahub']['configLocal']['db']['username']` -
-* `node['datahub']['configLocal']['db']['server']` -
-* `node['datahub']['configLocal']['db']['password']` -
-* `node['datahub']['configLocal']['settings']['api_url']` -
-* `node['datahub']['configLocal']['settings']['port']` -
-* `node['datahub']['configLocal']['settings']['host']` -
-* `node['datahub']['configLocal']['settings']['update_url']` -
-* `node['datahub']['configLocal']['settings']['config_polling_interval']` -
-* `node['datahub']['configLocal']['settings']['api2_url']` -
-* `node['datahub']['configLocal']['settings']['update_polling_interval']` -
-* `node['datahub']['configLocal']['tcp']['bind_port']` -
-* `node['datahub']['configLocal']['tcp']['max_size']` -
-* `node['datahub']['configLocal']['tcp']['tls_bind_port']` -
+* `node['datahub']['configLocal']['db']['username']` - database username
+* `node['datahub']['configLocal']['db']['server']` - database server address
+* `node['datahub']['configLocal']['db']['server']` - database server address
+* `node['datahub']['configLocal']['db']['password']` - database password
+* `node['datahub']['configLocal']['settings']['api_url']` - api url
+* `node['datahub']['configLocal']['settings']['port']` - api url port
+* `node['datahub']['configLocal']['settings']['host']` - data hostname
+* `node['datahub']['configLocal']['settings']['update_url']` - datahub update url
+* `node['datahub']['configLocal']['settings']['config_polling_interval']` - config polling interval in seconds
+* `node['datahub']['configLocal']['settings']['api2_url']` - second api url
+* `node['datahub']['configLocal']['settings']['update_polling_interval']` - update polling interval
+* `node['datahub']['configLocal']['tcp']['bind_port']` - TCP for DataHub to bind to
+* `node['datahub']['configLocal']['tcp']['max_size']` - max Size of a message
+* `node['datahub']['configLocal']['tcp']['tls_bind_port']` - TLS port for DataHub
 
 Recipes
 -------
